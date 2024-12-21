@@ -1,5 +1,5 @@
-### Project Structure (Badhon Biswas)
-/project/  
+### Project Structure
+###project/  
 ├── index.html  
 ├── about.html  
 ├── assets/  
