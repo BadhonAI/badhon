@@ -1,6 +1,6 @@
-# Badhon Biswas - Personal Website
-
 ![Banner](https://via.placeholder.com/1200x400.png?text=Welcome+to+Badhon+Biswas+Personal+Website)  <!-- Replace this URL with your actual banner image URL -->
+
+# Badhon Biswas - Personal Website
 
 ## Website Information
 
@@ -36,7 +36,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 - Thanks to all the open-source tools and libraries that made this project possible.
 
-### Project Structure
+## Project Structure
 》project/  
 ├── index.html  
 ├── about.html  
