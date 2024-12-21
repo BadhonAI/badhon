@@ -1,5 +1,5 @@
 ### Project Structure
-### project/  
+》project/  
 ├── index.html  
 ├── about.html  
 ├── assets/  
