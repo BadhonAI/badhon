@@ -1,4 +1,4 @@
-`/project/
+/project/
 ├── index.html
 ├── about.html
 ├── assets/
@@ -17,5 +17,3 @@
 │   ├── header.html
 │   ├── footer.html
 │   └── navbar.html
-└── utils/
-    ├── fetchComponent.js`
