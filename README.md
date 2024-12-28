@@ -1,3 +1,8 @@
+<!-- Coolors Palette Widget -->
+      <script src="https://coolors.co/palette-widget/widget.js"></script>
+      <script data-id="09697558319902584">new CoolorsPaletteWidget("09697558319902584", ["8E79DE","A57ACF","FFFFFF","7F77E7","998AE0"]); </script>
+
+
 ![Banner](https://github.com/BadhonTech/badhon/blob/main/assets/img/cover.png?raw=true)  <!-- Replace this URL with your actual banner image URL -->
 
 # Badhon Biswas - Personal Website
