@@ -46,3 +46,8 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.logo {
+  width: 30px;
+  height: 30px;
+  background: url("assets/img/logo-white.png");
+}
