@@ -45,9 +45,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 .logo {
   width: 30px;
   height: 30px;
+  padding: 10px;
   background: #000;
 }
