@@ -43,11 +43,12 @@ nav {
   height: 50px;
   background: var(--pink);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 30px;
 }
 .logo {
   width: 30px;
   height: 30px;
-  background: url("assets/img/logo-white.png");
+  background: #000;
 }
