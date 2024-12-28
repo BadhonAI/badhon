@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/BadhonTech/badhon/refs/heads/main/assets/img/cover.png?token=GHSAT0AAAAAAC4PFQ6AC6BQWGZQFA3RRSEAZ3O5HNQ)  <!-- Replace this URL with your actual banner image URL -->
+![Banner](https://github.com/BadhonTech/badhon/blob/main/assets/img/cover.png?raw=true)  <!-- Replace this URL with your actual banner image URL -->
 
 # Badhon Biswas - Personal Website
 
