@@ -45,13 +45,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 .logo {
   width: 30px;
   height: 30px;
-  background: #000;
-}
-.pages {
-  display: none;
+  background: url('assets/img/logo.png');
+  padding: 30px;
 }
