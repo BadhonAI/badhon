@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://badhon.pages.dev/sitemap.xml
