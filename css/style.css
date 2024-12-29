@@ -1,0 +1,158 @@
+:root {
+  /* Main Colors */
+  --pink: #FF6BBE;
+  --purple: #8A6DFF;
+  --navy-blue: #000080;
+  
+  /* Accent Colors */
+  --light-gray: #F7F7F7;
+  --soft-pink: #dcc2f7;
+  --soft-blue: #7a24ff;
+  --dark-gray: #333333;
+  
+  /* Neutral Colors */
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+body {
+  color: var(--black);
+  background:
+    linear-gradient(var(--light-gray),
+      var(--soft-pink));
+      height: 100%;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(20px);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.container .logo {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  margin: 20px auto;
+  border: 14px solid var(--soft-pink);
+}
+
+/* .container .logo::before {
+  content: '';
+  background: url("../img/bg1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(40px);
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+} */
+
+.name,
+.title,
+.dis {
+  position: relative;
+  margin: 5px;
+}
+
+.name span {
+  background: var(--BLUE-RED--GRD, linear-gradient(93deg, #B141FF 4.88%, #FA39A0 43.69%, #FF2428 63.1%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logos {
+  background: linear-gradient(var(--navy-blue),var(--soft-blue));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 30px 0;
+  font-size: 50px;
+  display: flex;
+  gap: 20px;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+.projects {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.pone,.ptwo {
+  width: 48%;
+  height: auto;
+  background: var(--white);
+  border-radius: 15px;
+}
+.pone img,.ptwo img {
+   width: 100%;
+   border-radius: 15px 15px 0 0;
+   aspect-ratio: 1 / 1;
+   object-fit: cover;
+}
+.pone h3,.ptwo h3 {
+  position: relative;
+  left: 10px;
+  font-size: 14px;
+  margin: 0;
+}
+.pone p,.ptwo p {
+  position: relative;
+  left: 10px;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0 0 10px 0;
+}
+.pone::before,
+.ptwo::before {
+  content: "Featured";
+  color: var(--white);
+  position: absolute;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 15px;
+  background: var(--soft-blue);
+  border-radius: 50px;
+}
+.skills h3{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.skills {
+  margin: 0 0 30px 0;
+}
+.icons {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+.icons img {
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  background: var(--light-gray);
+  border-radius: 15px;
+}
+
+.experience h3{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.experience img {
+  width: 100%;
+}
