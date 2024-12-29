@@ -1,4 +1,4 @@
-![Banner](https://github.com/BadhonTech/badhon/blob/main/assets/img/cover.png?raw=true)  <!-- Replace this URL with your actual banner image URL -->
+![Banner](https://github.com/BadhonTech/badhon/blob/main/img/cover.png?raw=true)  <!-- Replace this URL with your actual banner image URL -->
 
 # Badhon Biswas - Personal Website
 
