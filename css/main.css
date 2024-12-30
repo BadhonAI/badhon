@@ -186,8 +186,6 @@ nav {
 #menu,#close{
   font-size: 30px;
   position: absolute;
-  display: grid;
-  place-items: center;
   z-index: 999;
 }
 #pages {
