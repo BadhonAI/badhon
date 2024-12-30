@@ -159,8 +159,8 @@ h4,h6,p {
 nav {
   z-index: 1000;
   position: fixed;
-    width: 100%;
-    height: 70px;
+  width: 100%;
+  height: 70px;
   background: rgba(0,0,0,0);
   display: flex;
   justify-content: space-between;
