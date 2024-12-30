@@ -192,6 +192,9 @@ nav {
   font-size: 30px;
   position: relative;
 }
+#close {
+  z-index: 9999;
+}
 #pages {
   position: relative;
   display: none;
