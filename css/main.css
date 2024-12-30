@@ -190,10 +190,8 @@ nav {
 }
 #menu,#close{
   font-size: 30px;
-  position: relative;
-}
-#close {
-  z-index: 9999;
+  position: absolute;
+  z-index: 999;
 }
 #pages {
   position: relative;
