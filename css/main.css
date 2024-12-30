@@ -15,7 +15,7 @@
   --white: #FFFFFF;
   --black: #000000;
 }
-
+/* loding Css */
 #lod {
   display: flex;
   flex-direction: column;
@@ -118,7 +118,7 @@
   animation-delay: .3s;
 }
 
-
+/*loding close */
 
 
 /* General Reset */
