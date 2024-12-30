@@ -199,6 +199,7 @@ nav {
   position: relative;
   display: none;
   align-items: center;
+  z-index: 0;
   top: 0;
   left: 0;
   width: 100%;
