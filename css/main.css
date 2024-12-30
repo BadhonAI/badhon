@@ -158,7 +158,7 @@ h4,h6,p {
 }
 nav {
   z-index: 1000;
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 70px;
   background: rgba(0,0,0,0);
