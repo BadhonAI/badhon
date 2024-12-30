@@ -193,6 +193,7 @@ nav {
   position: absolute;
   display: grid;
   place-items: center;
+  z-index: 999;
 }
 #pages {
   position: relative;
