@@ -185,7 +185,7 @@ nav {
 }
 #menu,#close{
   font-size: 30px;
-  position: absolute;
+  position: relative;
   z-index: 999;
 }
 #pages {
