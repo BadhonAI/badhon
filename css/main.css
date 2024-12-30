@@ -165,7 +165,7 @@ nav {
 }
 .nav-bar {
   position: fixed;
-  background: linear-gradient(rgba(0,0,0,0),var(--light-gray));
+  background: rgba(0,0,0,0);
   display: flex;
   justify-content: space-between;
   align-items: center;
