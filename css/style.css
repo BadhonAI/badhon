@@ -103,7 +103,7 @@ body {
    aspect-ratio: 1 / 1;
    object-fit: cover;
 }
-.pone h3,.ptwo h3 {
+.pone h2,.ptwo h2 {
   position: relative;
   left: 10px;
   font-size: 14px;
