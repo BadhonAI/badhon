@@ -161,6 +161,7 @@ nav {
   z-index: 1000;
 }
 .nav-bar {
+  background: linear-gradient(var(--light-gray),rgba(0,0,0,0));
   width: 100%;
   height: 70px;
   display: flex;
