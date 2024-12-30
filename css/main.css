@@ -163,7 +163,7 @@ nav {
 
 }
 .nav-bar {
-  position: sticky;
+  position: fixed;
     width: 100%;
     height: 70px;
   background: rgba(0,0,0,0);
@@ -184,14 +184,15 @@ nav {
   height: 50px;
   margin: 0 20px;
   display: flex;
-  position: absolute;
+  position: relative;
   justify-content: center;
   align-items: center;
 }
 #menu,#close{
   font-size: 30px;
   position: absolute;
-  z-index: 999;
+  display: grid;
+  place-items: center;
 }
 #pages {
   position: relative;
