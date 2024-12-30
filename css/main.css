@@ -191,7 +191,7 @@ nav {
   z-index: 999;
 }
 #pages {
-  position: relative;
+  position: absolute;
   display: none;
   align-items: center;
   z-index: 0;
