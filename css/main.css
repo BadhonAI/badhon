@@ -157,7 +157,7 @@ h4,h6,p {
   font-family: "Roboto";
 }
 nav {
-  position: relative;
+  position: fixed;
   z-index: 1000;
 }
 .nav-bar {
