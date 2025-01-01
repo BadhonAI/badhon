@@ -14,3 +14,9 @@
   --white: #FFFFFF;
   --black: #000000;
 }
+
+
+.input {
+  display: flex;
+  flex-direction: row;
+}
