@@ -1,0 +1,16 @@
+:root {
+  /* Main Colors */
+  --pink: #FF6BBE;
+  --purple: #8A6DFF;
+  --navy-blue: #000080;
+  
+  /* Accent Colors */
+  --light-gray: #F7F7F7;
+  --soft-pink: #dcc2f7;
+  --soft-blue: #7a24ff;
+  --dark-gray: #333333;
+  
+  /* Neutral Colors */
+  --white: #FFFFFF;
+  --black: #000000;
+}
