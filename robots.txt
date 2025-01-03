@@ -1,4 +1,4 @@
-Sitemap: https://badhon.pages.dev/sitemap.xml
+User-agent: *
+Disallow:
 
-User-agent: * 
-Disallow: /404.html
+Sitemap: https://badhon.pages.dev/sitemap.xml
