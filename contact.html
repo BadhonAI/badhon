@@ -34,7 +34,7 @@
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="/css/main.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="/css/contact.css" type="text/css" media="all" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   
 </head>
@@ -65,26 +65,19 @@
     </div>
   </nav>
   <main>
+  <form id="form" action="https://api.web3forms.com/submit" method="POST"> <input type="hidden" name="access_key" value="8e6d837c-8acb-4cbf-b104-9fc6471917ab">
     <div class="container">
-      <h1>Contact Us</h1>
-      <form>
-        <div class="input">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        </div>
-        <div class="input">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        </div>
-        <div class="input">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" cols="40" required></textarea>
-        </div>
-        <input type="submit" value="Submit">
-      </form>
+      <h1>Contact</h1>
+      <input type="text" name="name" id="name" placeholder="Your Name" required>
+      <input type="email" name="email" id="email" placeholder="Your Email" required/>
+      <textarea name="message" id=message rows="4" cols="50" placeholder="Message" required></textarea>
+      <button type="submit">Submit</button>
+      <h3 id="result"></h3>
     </div>
+    </form>
   </main>
   <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 
 </html>
