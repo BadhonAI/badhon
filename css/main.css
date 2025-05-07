@@ -16,6 +16,11 @@
   --black: #000000;
 }
 /* loding Css */
+
+body.no-scroll {
+  overflow: hidden;
+}
+
 #lod {
   display: flex;
   flex-direction: column;
