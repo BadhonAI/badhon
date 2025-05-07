@@ -14,3 +14,107 @@
   --white: #FFFFFF;
   --black: #000000;
 }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--light-gray);
+  color: var(--dark-gray);
+  line-height: 1.7;
+}
+
+nav {
+  background: var(--white);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-btn i {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--purple);
+}
+
+#pages a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--dark-gray);
+  font-weight: 500;
+}
+
+#pages a:hover {
+  color: var(--soft-blue);
+}
+
+main {
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--navy-blue);
+}
+
+section {
+  margin-top: 2rem;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: var(--purple);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--dark-gray);
+}
+
+ul {
+  list-style: inside disc;
+  color: var(--dark-gray);
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+address p a {
+  color: var(--pink);
+  text-decoration: none;
+}
+
+address p a:hover {
+  text-decoration: underline;
+  color: var(--soft-blue);
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #pages {
+    margin-top: 1rem;
+  }
+
+  #pages a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
