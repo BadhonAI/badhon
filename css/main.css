@@ -218,6 +218,7 @@ nav {
   color: var(--light-gray);
   text-decoration: none;
 }
+
 button {
   color: var(--white);
   font-family: Roboto;
@@ -229,7 +230,15 @@ button {
   border-radius: 50px;
   background: var(--soft-blue);
   box-shadow: 0 30px 40px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
+
+button:hover {
+  background: var(--purple); /* Change background color */
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5); /* Keep vertical offset 30px, increase blur and opacity */
+  cursor: pointer;
+}
+
 .section {
   display: flex;
   width: 100%;

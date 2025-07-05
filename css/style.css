@@ -25,6 +25,7 @@ body {
   background-position: right;
   background-repeat: no-repeat;
   backdrop-filter: blur(20px);
+  height: 200vh;
 }
 
 .container {
@@ -82,6 +83,16 @@ body {
   display: flex;
   gap: 20px;
 }
+
+.logos a i {
+  /* Ensure icons inherit gradient text fill */
+  background: linear-gradient(var(--navy-blue), var(--soft-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; /* necessary for background-clip on inline elements */
+}
+
+
 .btns {
   display: flex;
   gap: 18px;
@@ -156,3 +167,43 @@ body {
 .experience img {
   width: 100%;
 }
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent; /* Removes tap highlight on mobile */
+  user-select: none; /* Prevents text selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+
+/* Hover effect for all anchor links */
+a:hover {
+  color: var(--purple);
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+/* Hover effect for social icons */
+.logos a i {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.logos a:hover i {
+  transform: scale(1.2);
+  filter: brightness(1.5);
+}
+
+/* Optional: hover effect for project cards */
+.pone:hover,
+.ptwo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+
+

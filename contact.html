@@ -1,46 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Contact - Badhon Biswas" />
-  <meta property="og:description"
-                                                                                                                          content="Welcome to the Contact page of Badhon Biswas. I am a passionate frontend and mobile developer with years of experience in web development, UI/UX design, and creative content creation. Learn more about my journey, skills, and projects here." />
-  <meta property="og:image" content="https://badhon.pages.dev/img/cover.png" />
-  <meta property="og:url" content="https://badhon.pages.dev/about" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:site_name" content="Badhon Biswas" />
-  
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://badhon.pages.dev/img/cover.png" />
-  <meta name="twitter:site" content="@TechBadhon" />
-  
-  <!-- Meta Description -->
-  <meta name="description"
-                                                                                                                          content="Welcome to the Contact page of Badhon Biswas. I am a passionate frontend and mobile developer with years of experience in web development, UI/UX design, and creative content creation. Learn more about my journey, skills, and projects here." />
-  
   <title>Contact - Badhon Biswas</title>
-  
+
+  <!-- SEO -->
+  <meta name="description" content="Get in touch with Badhon Biswas, a passionate frontend developer. Reach out for collaborations, hiring, or project discussions." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="canonical" href="https://badhonbiswas.vercel.app/contact" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact - Badhon Biswas" />
+  <meta property="og:description" content="Get in touch with Badhon Biswas, a frontend developer who creates clean and fast websites. Let's build something great together." />
+  <meta property="og:image" content="https://badhontech.vercel.app/img/cover.png" />
+  <meta property="og:url" content="https://badhonbiswas.vercel.app/contact" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_BD" />
+  <meta property="og:site_name" content="Badhon Biswas" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact - Badhon Biswas" />
+  <meta name="twitter:description" content="Contact Badhon Biswas, a frontend developer passionate about clean code and modern UI." />
+  <meta name="twitter:image" content="https://badhontech.vercel.app/img/cover.png" />
+  <meta name="twitter:site" content="@thebadhonbiswas" />
+
   <!-- Favicon -->
-  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon" />
   <link rel="icon" href="/img/icon.png" sizes="32x32" />
   <link rel="icon" href="/img/icon.png" sizes="16x16" />
-  
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon" />
+
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="/css/main.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="/css/contact.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/contact.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-  
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Badhon Biswas",
+    "jobTitle": "Frontend Developer",
+    "description": "Frontend developer creating fast, responsive, and clean websites.",
+    "url": "https://badhonbiswas.vercel.app",
+    "sameAs": [
+      "https://facebook.com/thebadhonbiswas",
+      "https://instagram.com/thebadhonbiswas",
+      "https://t.me/thebadhonbiswas",
+      "https://github.com/thebadhonbiswas",
+      "https://youtube.com/@thebadhonbiswas"
+    ]
+  }
+  </script>
 </head>
 
-
 <body>
+  <!-- Loader -->
   <div id="lod">
     <div class="wrapper">
       <div class="circle"></div>
@@ -51,33 +74,84 @@
       <div class="shadow"></div>
     </div>
   </div>
+
+  <!-- Navigation -->
   <nav>
     <div class="logo"></div>
     <div class="nav-btn">
       <i class="fas fa-bars" id="menu"></i>
-      <i class="fas fa-times" id="close">
-      </i>
+      <i class="fas fa-times" id="close"></i>
     </div>
     <div id="pages">
-      <a target="_self" href="index.html">Home</a>
-      <a target="_self" href="about.html">About</a>
-      <a target="_self" href="contact.html">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </div>
   </nav>
+
+  <!-- Contact Form -->
   <main>
-  <form id="form" action="https://api.web3forms.com/submit" method="POST"> <input type="hidden" name="access_key" value="8e6d837c-8acb-4cbf-b104-9fc6471917ab">
-    <div class="container">
-      <h1>Contact</h1>
-      <input type="text" name="name" id="name" placeholder="Your Name" required>
-      <input type="email" name="email" id="email" placeholder="Your Email" required/>
-      <textarea name="message" id=message rows="4" cols="50" placeholder="Message" required></textarea>
-      <button type="submit">Submit</button>
-      <h3 id="result"></h3>
-    </div>
+    <form id="form" action="https://api.web3forms.com/submit" method="POST" class="fade-form">
+      <input type="hidden" name="access_key" value="8e6d837c-8acb-4cbf-b104-9fc6471917ab">
+      <div class="container">
+        <h1 class="fade-title">Contact</h1>
+        <input type="text" name="name" id="name" placeholder="Your Name" required class="fade-input" />
+        <input type="email" name="email" id="email" placeholder="Your Email" required class="fade-input" />
+        <textarea name="message" id="message" rows="4" placeholder="Message" required class="fade-input"></textarea>
+        <button type="submit" class="fade-btn">Submit</button>
+        <h3 id="result"></h3>
+      </div>
     </form>
   </main>
-  <script src="js/main.js"></script>
-  <script src="js/contact.js"></script>
-</body>
 
+  <!-- Scripts -->
+  <script src="/js/main.js" defer></script>
+  <script src="/js/contact.js" defer></script>
+
+  <!-- GSAP Scroll Animation -->
+  <script defer>
+    window.addEventListener("load", () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from(".fade-title", {
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".fade-title",
+          start: "top 90%",
+          toggleActions: "play none none none"
+        }
+      });
+
+      gsap.utils.toArray(".fade-input").forEach((el, i) => {
+        gsap.from(el, {
+          y: 40,
+          opacity: 0,
+          delay: i * 0.1,
+          duration: 0.6,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 95%",
+            toggleActions: "play none none none"
+          }
+        });
+      });
+
+      gsap.from(".fade-btn", {
+        scale: 0.9,
+        opacity: 0,
+        duration: 0.5,
+        ease: "back.out(1.7)",
+        scrollTrigger: {
+          trigger: ".fade-btn",
+          start: "top 95%",
+          toggleActions: "play none none none"
+        }
+      });
+    });
+  </script>
+</body>
 </html>
