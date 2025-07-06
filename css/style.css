@@ -6,7 +6,7 @@
   
   /* Accent Colors */
   --light-gray: #F7F7F7;
-  --soft-pink: #dcc2f7;
+  --soft-pink: #ecdefc;
   --soft-blue: #7a24ff;
   --dark-gray: #333333;
   
@@ -25,7 +25,7 @@ body {
   background-position: right;
   background-repeat: no-repeat;
   backdrop-filter: blur(20px);
-  height: 200vh;
+  height: 250vh;
 }
 
 .container {
@@ -146,26 +146,31 @@ body {
 .skills {
   margin: 0 0 30px 0;
 }
+
 .icons {
   display: flex;
-  margin: 10px 0;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 0;
 }
+
 .icons img {
-  width: 50px;
-  height: 50px;
-  padding: 15px;
-  background: var(--light-gray);
-  border-radius: 15px;
+  flex: 0 1 calc(25% - 10px); /* 4 per row */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #fff;
+  width: 30px;
+  padding: 10px;
+  height: auto;
+  box-sizing: border-box;
 }
 
 .experience h3{
   display: flex;
   justify-content: center;
   margin: 0;
-}
-.experience img {
-  width: 100%;
 }
 
 
@@ -205,5 +210,12 @@ a:hover {
   transition: all 0.3s ease;
 }
 
+.icons img,
+.projects .pone,
+.projects .ptwo {
+  will-change: transform, opacity;
+}
 
-
+.section-title {
+  padding-top: 20px;
+}
