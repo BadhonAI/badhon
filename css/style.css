@@ -25,7 +25,7 @@ body {
   background-position: right;
   background-repeat: no-repeat;
   backdrop-filter: blur(20px);
-  height: 250vh;
+  height: 400vh;
 }
 
 .container {
@@ -219,3 +219,4 @@ a:hover {
 .section-title {
   padding-top: 20px;
 }
+

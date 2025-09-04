@@ -150,27 +150,26 @@
   </div>
 </main>
   <script src="js/main.js" defer></script>
-
 <script defer>
 window.addEventListener("load", () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  // Hide loader
+  // Hide loader - removed delay
   gsap.to("#lod", {
     opacity: 0,
-    duration: 0.6,
-    delay: 0.3,
+    duration: 0.8,
+    ease: "power2.out",
     onComplete: () => {
       document.getElementById("lod").style.display = "none";
     }
   });
 
-  // Ensure logos are visible
+  // Ensure logos are visible and hide projects initially
   gsap.set(".logos, .logos a", { opacity: 1, visibility: "visible" });
+  gsap.set(".projects .pone, .projects .ptwo", { opacity: 0, y: 50 });
 
-  // Entrance Animation Timeline
+  // Entrance Animation Timeline - removed delay
   const entranceTL = gsap.timeline({
-    delay: 0.9,
     onComplete: () => {
       initScrollAnimations();
       ScrollTrigger.refresh(); // Important: refresh after initial animations
@@ -178,24 +177,24 @@ window.addEventListener("load", () => {
   });
 
   entranceTL
-    .from("nav", { y: -40, opacity: 0, duration: 0.6, ease: "power2.out" })
-    .from("header .logo img", { scale: 0.85, opacity: 0, duration: 0.6, ease: "back.out(1.7)" }, "-=0.4")
-    .from(".name", { y: 25, opacity: 0, duration: 0.5 }, "-=0.4")
-    .from(".title", { y: 25, opacity: 0, duration: 0.5 }, "-=0.3")
-    .from(".dis", { y: 20, opacity: 0, duration: 0.5 }, "-=0.3")
-    .from(".logos", { opacity: 0, y: 15, duration: 0.4 }, "-=0.3")
-    .from(".logos a", { opacity: 0, y: 15, duration: 0.4, stagger: 0.1 }, "-=0.3")
-    .from(".btns", { opacity: 0, y: 20, duration: 0.4 }, "-=0.3")
-    .from(".btns button", { opacity: 0, y: 15, duration: 0.4, stagger: 0.15 }, "-=0.3");
+    .from("nav", { y: -40, opacity: 0, duration: 0.8, ease: "power2.out" })
+    .from("header .logo img", { scale: 0.85, opacity: 0, duration: 0.8, ease: "back.out(1.4)" }, "-=0.5")
+    .from(".name", { y: 30, opacity: 0, duration: 0.7, ease: "power2.out" }, "-=0.5")
+    .from(".title", { y: 30, opacity: 0, duration: 0.7, ease: "power2.out" }, "-=0.4")
+    .from(".dis", { y: 25, opacity: 0, duration: 0.6, ease: "power2.out" }, "-=0.4")
+    .from(".logos", { opacity: 0, y: 20, duration: 0.6, ease: "power2.out" }, "-=0.4")
+    .from(".logos a", { opacity: 0, y: 20, duration: 0.6, stagger: 0.08, ease: "power2.out" }, "-=0.4")
+    .from(".btns", { opacity: 0, y: 25, duration: 0.6, ease: "power2.out" }, "-=0.4")
+    .from(".btns button", { opacity: 0, y: 20, duration: 0.6, stagger: 0.1, ease: "power2.out" }, "-=0.4");
 
   // All Scroll-based Animations
   function initScrollAnimations() {
-    // Generic fade-in-up
+    // Generic fade-in-up - smoother
     gsap.utils.toArray(".fade-in-up").forEach(el => {
       gsap.from(el, {
-        y: 50,
+        y: 60,
         opacity: 0,
-        duration: 0.8,
+        duration: 1.0,
         ease: "power2.out",
         scrollTrigger: {
           trigger: el,
@@ -207,12 +206,12 @@ window.addEventListener("load", () => {
       });
     });
 
-    // Section titles
+    // Section titles - smoother
     gsap.utils.toArray(".section-title").forEach(title => {
       gsap.from(title, {
-        y: 30,
+        y: 40,
         opacity: 0,
-        duration: 0.8,
+        duration: 1.0,
         ease: "power2.out",
         scrollTrigger: {
           trigger: title,
@@ -224,17 +223,17 @@ window.addEventListener("load", () => {
       });
     });
 
-    // Skills icons animation
+    // Skills icons animation - smoother
     gsap.utils.toArray(".skills .icons").forEach(iconContainer => {
       gsap.from(iconContainer.children, {
         opacity: 0,
-        y: 15,
-        duration: 0.5,
+        y: 20,
+        duration: 0.7,
         stagger: {
-          each: 0.04,
+          each: 0.06,
           from: "start"
         },
-        ease: "power1.out",
+        ease: "power2.out",
         scrollTrigger: {
           trigger: iconContainer,
           start: "top 80%",
@@ -245,31 +244,30 @@ window.addEventListener("load", () => {
       });
     });
 
-    // Animate project cards (.pone and .ptwo) on scroll
-    gsap.from(".projects .pone, .projects .ptwo", {
-      y: 40,
-      opacity: 0,
-      duration: 0.8,
-      stagger: 0.2,
+    // Animate project cards - smoother
+    gsap.to(".projects .pone, .projects .ptwo", {
+      y: 0,
+      opacity: 1,
+      duration: 1.0,
+      stagger: 0.15,
       ease: "power2.out",
       scrollTrigger: {
         trigger: ".projects",
         start: "top 80%",
         toggleActions: "play none none none",
-        once: true,
-        immediateRender: false
+        once: true
       }
     });
 
-    // Project card hover animation
+    // Project card hover animation - smoother
     gsap.utils.toArray(".projects .pone, .projects .ptwo").forEach(project => {
       project.addEventListener("mouseenter", () => {
         gsap.to(project, {
-          scale: 1.03,
-          y: -10,
-          boxShadow: "0px 10px 20px rgba(0,0,0,0.2)",
-          duration: 0.3,
-          ease: "power1.out"
+          scale: 1.05,
+          y: -15,
+          boxShadow: "0px 15px 30px rgba(0,0,0,0.15)",
+          duration: 0.4,
+          ease: "power2.out"
         });
       });
 
@@ -278,30 +276,30 @@ window.addEventListener("load", () => {
           scale: 1,
           y: 0,
           boxShadow: "none",
-          duration: 0.3,
-          ease: "power1.out"
+          duration: 0.4,
+          ease: "power2.out"
         });
       });
     });
 
-    // Header parallax
+    // Header parallax - smoother
     gsap.to("header .logo img", {
-      yPercent: 20,
+      yPercent: 25,
       ease: "none",
       scrollTrigger: {
         trigger: "header",
         start: "top top",
         end: "bottom top",
-        scrub: true
+        scrub: 1.5
       }
     });
 
-    // Sticky nav on scroll
+    // Sticky nav on scroll - smoother
     gsap.to("nav", {
       backgroundColor: "rgba(255,255,255,0.95)",
       boxShadow: "0px 2px 10px rgba(0,0,0,0.1)",
-      duration: 0.3,
-      ease: "power1.out",
+      duration: 0.5,
+      ease: "power2.out",
       scrollTrigger: {
         trigger: "header",
         start: "bottom top",
